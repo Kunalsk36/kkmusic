@@ -64,13 +64,13 @@ main{
     background-color: #F0F8FF;
     color: white;
     margin: 23px auto;
-    width: 70%;
+    max-width: 900px;
     background-image: url(Images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     padding: 25px;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 
 .songList h1{
@@ -112,6 +112,7 @@ main{
     padding-top: 4px;
     cursor: pointer;
 }
+
 .timestamp{
     margin: 0 15px;
 }
@@ -182,4 +183,15 @@ footer p{
     div.bottom{
         height: 135px;
     }
+    
+}
+
+@media screen and (max-width: 500px){
+    .songName{
+    backgrond:red;
+    max-width:150px;
+white-space: nowrap;;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
 }
