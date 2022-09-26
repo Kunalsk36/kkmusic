@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F0F8FF;
+}
+
+header{
+    background-color: #073980;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    height: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    box-sizing: unset;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 0px 8px;
+}
+
+nav ul li :hover{
+    font-weight: bold;
+    color: rgb(0, 234, 255) ;
+    text-decoration: underline;
+}
+
+
+nav ul li img{
+    width: 100%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer{
+    height: 10px;
+}
+
+footer p{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+main{
+    min-height: 95vh;
+    background: #2A3BDE;
+    background: -webkit-radial-gradient(center, #2A3BDE, #49A2D8);
+    background: -moz-radial-gradient(center, #2A3BDE, #49A2D8);
+    background: radial-gradient(ellipse at center, #2A3BDE, #49A2D8);
+    background-color: red;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+}
+
+.contactus h1{
+    color: #fff508;;
+    text-shadow: 0 0 5px black;
+    margin: 0 20px;
+    padding: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+td{
+    color: white;
+}
+
+#name{
+    background: antiquewhite;
+    border: 2px solid #292f85;
+    border-radius: 7px;
+    padding: 2px;
+    color: black;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+}
+
+#email{
+    background: antiquewhite;
+    border: 2px solid #292f85;
+    border-radius: 7px;
+    padding: 2px;
+    color: black;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+}
+
+#ContactNo{
+    background: antiquewhite;
+    border: 2px solid #292f85;
+    border-radius: 7px;
+    padding: 2px;
+    color: black;
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+}
+
+#query{
+    background: antiquewhite;
+    border: 2px solid #292f85;
+    border-radius: 7px;
+    padding: 2px;
+    color: black;
+    height: 100px;
+    width: 300px;
+    font-size: 18px;
+    box-shadow: 0 0 4px white;
+}
+
+label{
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+input{
+    background: #ff0000;
+    border-radius: 15px;
+    box-shadow: 0 0 4px white;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.myemail{
+    color: white;
+    font-size: 18px;
+}
+
+.myemail a{
+    color: #fff700;
+    text-shadow: 0 0 1.5px black;
+}
+
+@media  screen and (max-width: 550px) {
+    div.section1{
+        margin-left: 40px;
+    }
+}

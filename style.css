@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F0F8FF;
+}
+
+header{
+    background-color: #073980;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    height: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    box-sizing: unset;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 0px 8px;
+}
+
+nav ul li :hover{
+    font-weight: bold;
+    color: rgb(0 255 248) ;
+    text-decoration: underline;
+}
+
+
+nav ul li img{
+    width: 100%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main{
+    min-height: 80vh;
+    background-color: #F0F8FF;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: #F0F8FF;
+    color: white;
+    margin: 23px auto;
+    width: 70%;
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 25px;
+    border-radius: 40px;
+}
+
+.songList h1{
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(to right,#ef476f 5%, #ffd166  35%, #118ab2 55%, #06d6a0 80%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationh1 1.5s linear infinite;
+}
+
+@keyframes animationh1 {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.SongItem{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+}
+
+.SongItem img{
+    width: 30px;
+    border-radius: 15px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+.timestamp{
+    margin: 0 15px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #073980;
+    color: floralwhite;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songInfo{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    text-align: left;
+    left: 10vw;
+    list-style: none;
+}
+
+#gif{
+    width: 35px;
+    opacity: 0;
+    transition: opacity 0.4 ease-in;
+}
+
+.icons i{
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#masterSongName{
+    font-size: 20px;
+}
+
+footer{
+    height: 10px;
+}
+
+footer p{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    div.songInfo {
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 800px){
+    div.bottom{
+        height: 135px;
+    }
+}

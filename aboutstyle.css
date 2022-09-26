@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: #F0F8FF;
+}
+
+header {
+    background-color: #073980;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    box-sizing: unset;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 0px 8px;
+}
+
+nav ul li :hover {
+    font-weight: bold;
+    color: rgb(0, 234, 255);
+    text-decoration: underline;
+}
+
+
+nav ul li img {
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    height: 10px;
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+main {
+    min-height: 95vh;
+    background: #1CB7BF;
+    background: -webkit-radial-gradient(center, #1CB7BF, #2684EA);
+    background: -moz-radial-gradient(center, #1CB7BF, #2684EA);
+    background: radial-gradient(ellipse at center, #1CB7BF, #2684EA);
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.aboutus p {
+    font-size: 24px;
+    color: white;
+    padding: 10px 0px 0px 60px;
+}
+
+#thanks {
+    color: red;
+    font-size: 30px;
+    text-shadow: 0 0 3px white;
+}
+
+#instagramid {
+    border-radius: 30px;
+    box-shadow: 0 0 10px white;
+}
+
+#Facebookid {
+    border-radius: 30px;
+    box-shadow: 0 0 10px white;
+}
+
+#welcome1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: transparent;
+    animation: effect1 1.5s linear infinite;
+}
+
+@keyframes effect1 {
+    0% {
+        background: linear-gradient(#5d0404, #ff0000);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#fa7100, #f1d1bb);
+        -webkit-background-clip: text;
+    }
+}
+
+#welcome2 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    text-shadow: 0 0 2px black;
+}
+
+.aboutusinfo {
+    margin: 15px 150px;
+    text-shadow: 0 0 2px black;
+}
+
+@media  screen and (max-width: 400px) {
+    nav ul li img{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 750px) {
+    div.aboutusinfo{
+        margin: 15px 90px;
+    }
+}
+
+@media  screen and (max-width: 750px) {
+    div.aboutusinfo{
+        margin: 15px 0;
+    }
+}
